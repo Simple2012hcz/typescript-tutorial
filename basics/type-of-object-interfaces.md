@@ -6,7 +6,7 @@
 
 在面向对象语言中，接口（Interfaces）是一个很重要的概念，它是对行为的抽象，而具体如何行动需要由类（classes）去实现（implement）。
 
-TypeScript 中的接口是一个非常灵活的概念，除了可用于[对类的一部分行为进行抽象](../advanced/class-and-interfaces.md#类实现接口)以外，也常用于对「对象的形状（Shape）」进行描述。
+TypeScript 中的接口是一个非常灵活的概念，除了可用于[对类的一部分行为进行抽象](../advanced/class-and-interfaces.md#类实现接口)以外，也常用于对「对象的属性（Field）」进行描述。
 
 ## 简单的例子
 
@@ -22,7 +22,7 @@ let tom: Person = {
 };
 ```
 
-上面的例子中，我们定义了一个接口 `Person`，接着定义了一个变量 `tom`，它的类型是 `Person`。这样，我们就约束了 `tom` 的形状必须和接口 `Person` 一致。
+上面的例子中，我们定义了一个接口 `Person`，接着定义了一个变量 `tom`，它的类型是 `Person`。这样，我们就约束了 `tom` 的类型必须和接口 `Person` 一致。
 
 接口一般首字母大写。[有的编程语言中会建议接口的名称加上 `I` 前缀](https://msdn.microsoft.com/en-us/library/8bc1fexb%28v=vs.71%29.aspx)。
 
@@ -60,11 +60,11 @@ let tom: Person = {
 //   Object literal may only specify known properties, and 'gender' does not exist in type 'Person'.
 ```
 
-可见，**赋值的时候，变量的形状必须和接口的形状保持一致**。
+可见，**赋值的时候，变量的类型必须和接口的类型保持一致**。
 
 ## 可选属性
 
-有时我们希望不要完全匹配一个形状，那么可以用可选属性：
+有时我们希望不要完全匹配一个类型，那么可以用可选属性：
 
 ```ts
 interface Person {
