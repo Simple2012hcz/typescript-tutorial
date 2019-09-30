@@ -16,6 +16,17 @@ tsc hello.ts
 
 我们约定使用 TypeScript 编写的文件以 `.ts` 为后缀，用 TypeScript 编写 React 时，以 `.tsx` 为后缀。
 
+另外，也可以使用ts-node模块，直接运行ts文件不用预先编译。
+```bash
+npm install -g ts-node
+```
+ts-node模块封装了tsc命令。
+
+运行一个ts文件，命令如下：
+```bash
+ts-node hell.ts
+```
+
 ## 编辑器
 
 TypeScript 最大的优势便是增强了编辑器和 IDE 的功能，包括代码补全、接口提示、跳转到定义、重构等。
