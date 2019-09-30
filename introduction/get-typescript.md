@@ -24,7 +24,7 @@ ts-node模块封装了tsc命令。
 
 运行一个ts文件，命令如下：
 ```bash
-ts-node hell.ts
+ts-node hello.ts
 ```
 
 ## 编辑器
